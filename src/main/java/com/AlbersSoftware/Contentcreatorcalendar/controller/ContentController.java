@@ -2,6 +2,8 @@ package com.AlbersSoftware.Contentcreatorcalendar.controller;
 
 import com.AlbersSoftware.Contentcreatorcalendar.model.Content;
 import com.AlbersSoftware.Contentcreatorcalendar.repository.ContentCollectionRepository;
+import com.AlbersSoftware.Contentcreatorcalendar.repository.ContentJdbcRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -12,9 +14,13 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/content")
+@CrossOrigin
 public class ContentController {
-
+// In memory repository
 private final ContentCollectionRepository repository;
+
+//JDBC repository
+//private final ContentJdbcRepository repository;
 
 
     public ContentController(ContentCollectionRepository repository) {
@@ -32,7 +38,7 @@ private final ContentCollectionRepository repository;
     }
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("")
-    public void create(@RequestBody Content content){
+    public void create(@Valid @RequestBody Content content){
         repository.save(content);
     }
     @ResponseStatus(HttpStatus.NO_CONTENT)
