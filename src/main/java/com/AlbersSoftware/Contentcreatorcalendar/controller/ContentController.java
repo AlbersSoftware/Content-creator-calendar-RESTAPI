@@ -1,8 +1,10 @@
 package com.AlbersSoftware.Contentcreatorcalendar.controller;
 
 import com.AlbersSoftware.Contentcreatorcalendar.model.Content;
+import com.AlbersSoftware.Contentcreatorcalendar.model.Status;
 import com.AlbersSoftware.Contentcreatorcalendar.repository.ContentCollectionRepository;
 import com.AlbersSoftware.Contentcreatorcalendar.repository.ContentJdbcRepository;
+import com.AlbersSoftware.Contentcreatorcalendar.repository.ContentRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,14 +18,19 @@ import java.util.Optional;
 @RequestMapping("/api/content")
 @CrossOrigin
 public class ContentController {
+
+private final ContentRepository repository;
+
 // In memory repository
-private final ContentCollectionRepository repository;
+//private final ContentCollectionRepository repository;
 
 //JDBC repository
 //private final ContentJdbcRepository repository;
 
-
-    public ContentController(ContentCollectionRepository repository) {
+    // for in memory repository change: public ContentController(ContentRepository repository)
+    //  to: public ContentController(ContentCollectionRepository repository)
+    // or public ContentController(ContentJdbcRepository repository) for: jdbc
+    public ContentController(ContentRepository repository) {
         this.repository = repository;
     }
     // make a request and find all the pieces of content in the system
@@ -52,8 +59,23 @@ private final ContentCollectionRepository repository;
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id){
-        repository.delete(id);
+        repository.deleteById(id);
+        // change to: repository.delete(id); for in memory or JDBC
 
+    }
+
+    @GetMapping("/filter/{keyword}")
+    public List<Content> filterByTitle(@PathVariable String keyword) {
+        return repository.findAllByTitleContains(keyword);
+    }
+    @GetMapping("/filter/type/{type}")
+    public List<Content> filterByType(@PathVariable String type) {
+        return repository.findAllByContentType(type.toUpperCase());
+    }
+
+    @GetMapping("/filter/status/{status}")
+    public List<Content> findByStatus(@PathVariable Status status){
+        return repository.listByStatus(status);
     }
 
 }
