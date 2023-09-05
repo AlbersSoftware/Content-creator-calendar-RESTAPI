@@ -1,0 +1,62 @@
+[
+  {
+    "id": null,
+    "title": "super-smash-bros-64-blog",
+    "desc": "An overview of the game and competitive scene",
+    "status": "PUBLISHED",
+    "contentType": "ARTICLE",
+    "dateCreated": "2020-10-19T00:00:00.000000",
+    "dateUpdated": null,
+    "url": "https://sethsesh.wordpress.com/2020/10/19/super-smash-bros-64-blog/"
+  },
+  {
+    "id": null,
+    "title": "a-beginners-guide-to-smash-64",
+    "desc": "An article about playing smash bros 64",
+    "status": "PUBLISHED",
+    "contentType": "ARTICLE",
+    "dateCreated": "2016-03-16T00:00:00.000000",
+    "dateUpdated": null,
+    "url": "https://thesmashwriter.wordpress.com/2016/03/16/a-beginners-guide-to-smash-64/"
+  },
+  {
+    "id": null,
+    "title": "Competitive-Strategy-for-smash-64",
+    "desc": "A long detailed guide to moves and strategies in the game.",
+    "status": "PUBLISHED",
+    "contentType": "ARTICLE",
+    "dateCreated": "2012-11-29T00:00:00.000000",
+    "dateUpdated": null,
+    "url": "https://gamefaqs.gamespot.com/n64/198854-super-smash-bros/faqs/55926"
+  },
+  {
+    "id": null,
+    "title": "SSC 2023 - Ledgey (Yoshi) Vs. Billy Schilly (Kirby) Smash Bros - SSB64",
+    "desc": "A video of me losing a competitive match at SuperSmashCon-2023.",
+    "status": "PUBLISHED",
+    "contentType": "VIDEO",
+    "dateCreated": "2023-08-21T00:00:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.youtube.com/watch?v=gw-n6YBg9_4"
+  },
+  {
+    "id": null,
+    "title": "SSC 2023 - Ledgey (Yoshi) Vs. Sled (Captain Falcon) Smash Bros - SSB64",
+    "desc": "A video of me losing a competitive match at SuperSmashCon-2023.",
+    "status": "PUBLISHED",
+    "contentType": "VIDEO",
+    "dateCreated": "2023-08-21T00:00:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.youtube.com/watch?v=OHbtb9PJqp8"
+  },
+  {
+    "id": null,
+    "title": "SSC 2023 - Ledgey (Yoshi, Luigi) Vs. Broly (Captain Falcon, Pikachu) Smash Bros - SSB64",
+    "desc": "A video of me losing a competitive match at SuperSmashCon-2023.",
+    "status": "PUBLISHED",
+    "contentType": "VIDEO",
+    "dateCreated": "2023-08-21T00:00:00.000000",
+    "dateUpdated": null,
+    "url": "https://www.youtube.com/watch?v=zjWxXEaNXW0"
+  }
+]
