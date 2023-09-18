@@ -22,3 +22,6 @@ few filter methods for filtering content. I plan to add
 more in the future.
 
 ![content-creator-json-data](https://github.com/AlbersSoftware/Content-creator-calendar-RESTAPI/assets/65799182/db1160a3-8026-4d85-9297-f17a58774cbb)
+
+# Hosting
+
