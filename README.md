@@ -26,5 +26,11 @@ more in the future.
 # Hosting
 As mentioned above this application is hosted on 
 Railway using a Postgres database. The data consist of blogs, videos, and articles. 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZweBXA)
+
+Railway has many DB options and is able to connect directly to a github repository.
 
 ![railwayimage](https://github.com/AlbersSoftware/Content-creator-calendar-RESTAPI/assets/65799182/7bb33f22-b03f-4152-97ff-4ce6e19b65a9)
+
+# Future Changes
+In the future I would like to add a front end to this application using Vite, Angular, or somthing similar. This project is mainly to showcase my Springboot 3 skills using REST API's, database connections, data validation, dependency injection, and hosting. 
