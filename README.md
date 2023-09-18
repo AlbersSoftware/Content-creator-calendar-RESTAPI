@@ -24,4 +24,7 @@ more in the future.
 ![content-creator-json-data](https://github.com/AlbersSoftware/Content-creator-calendar-RESTAPI/assets/65799182/db1160a3-8026-4d85-9297-f17a58774cbb)
 
 # Hosting
+As mentioned above this application is hosted on 
+Railway using a Postgres database. The data consist of blogs, videos, and articles. 
 
+![railwayimage](https://github.com/AlbersSoftware/Content-creator-calendar-RESTAPI/assets/65799182/7bb33f22-b03f-4152-97ff-4ce6e19b65a9)
