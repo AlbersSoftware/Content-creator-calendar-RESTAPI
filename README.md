@@ -26,6 +26,8 @@ more in the future.
 # Hosting
 As mentioned above this application is hosted on 
 Railway using a Postgres database. The data consist of blogs, videos, and articles. 
+
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZweBXA)
 
 Railway has many DB options and is able to connect directly to a github repository.
